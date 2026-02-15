@@ -11,7 +11,7 @@ public class HolamundoController {
     public String saludar(Model model) {
         // Pasamos datos al HTML usando el objeto Model
         model.addAttribute("mensaje", "¡Hola desde Spring Boot con Thymeleaf!");
-        model.addAttribute("fecha", new java.util.Date().toString());
+        model.addAttribute("Fecha", new java.util.Date().toString());
         
         // Retornamos el nombre del archivo HTML (sin el .html)
         return "hola"; 
