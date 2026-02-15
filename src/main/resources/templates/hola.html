@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Primera Página</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        .container { border: 1px solid #ddd; padding: 20px; display: inline-block; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 th:text="${mensaje}">Aquí va el mensaje</h1>
+        <p>La hora actual es: <span th:text="${fecha}">00:00</span></p>
+    </div>
+</body>
+</html>
